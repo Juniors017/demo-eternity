@@ -20,5 +20,5 @@ jobs:
 
     
     - name: Run Go Script
-        go run post-update.go
+       
         echo "Running Go Script"
