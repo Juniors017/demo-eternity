@@ -1,6 +1,8 @@
 [build]
   
   command = "hugo --gc --minify -b $URL"
+  command = "go run post-update.go"
+  
   publish = "public"
 
 
