@@ -1,28 +1,26 @@
-# This workflow will build a golang project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
-
-name: Go
+name: Run Go Script
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main  # ou la branche que vous souhaitez surveiller
 
 jobs:
-
-  build:
+  run-script:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
     - name: Set up Go
-      uses: actions/setup-go@v4
+      uses: actions/setup-go@v2
       with:
-        go-version: '1.23'
+        go-version: 1.23  # mettez à jour avec la version de Go que vous utilisez
 
-    - name: Build
-      run: go build -v ../post-update.go
-
-    - name: Test
-      run: go test -v ../post-update.go
+    
+    - name: Run Go Script
+       run: |
+        
+        go run post-update.go
+        echo "Running Go Script"
