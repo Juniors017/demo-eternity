@@ -25,7 +25,4 @@ jobs:
 
     - name: Run Go Script
       run: |
-        
-
-      
-        go run post-update.go
+        go run ./post-update.go
