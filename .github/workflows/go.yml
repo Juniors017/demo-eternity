@@ -1,3 +1,4 @@
+
 name: Run Go Script
 
 on:
@@ -22,7 +23,6 @@ jobs:
       run: |
         sudo apt-get install golang-go
         go get gopkg.in/yaml.v2
-
     - name: Run Go Script
       run: |
         go run ./post-update.go
