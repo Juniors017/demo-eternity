@@ -1,4 +1,5 @@
 
+
 name: Run Go Script
 
 on:
@@ -30,12 +31,9 @@ jobs:
         git config --global user.name "${{ secrets.GIT_USERNAME }}"
         
         go run ./post-update.go
-
         # Stage tous les fichiers modifiés
         git add .
-
         # Commit avec un message
         git commit -m "Renommer les fichiers"
-
         # Poussez les modifications vers le dépôt distant en utilisant le token d'accès personnel
         git push origin main  # Remplacez 'main' par le nom de votre branche si elle est différente
