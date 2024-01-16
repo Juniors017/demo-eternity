@@ -1,4 +1,4 @@
-name: Run Go-Script
+name: Run Go Script
 
 on:
   push:
@@ -21,5 +21,6 @@ jobs:
     
     - name: Run Go Script
        run: |
+        
+        go run ./post-update.go
         echo "Running Go Script"
-        go run post-update.go
