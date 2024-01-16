@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '16'  # Spécifiez la version de Node.js que vous souhaitez utiliser
+        node-version: '12'  # Spécifiez la version de Node.js que vous souhaitez utiliser
 
     - name: Set up Go
       uses: actions/setup-go@v2
