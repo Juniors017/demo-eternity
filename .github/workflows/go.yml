@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '12'  # Spécifiez la version de Node.js que vous souhaitez utiliser
+        node-version: '16'  # Utiliser explicitement Node.js 16
 
     - name: Set up Go
       uses: actions/setup-go@v2
@@ -26,5 +26,7 @@ jobs:
     - name: Run Go Script
       run: |
         go get gopkg.in/yaml.v2
+       
+
       
         go run post-update.go
