@@ -1,14 +1,9 @@
 [build]
-  
-  command = "hugo --gc --minify -b $URL"
-  command = "go run post-update.go"
-  
+  command = "hugo --gc --minify -b $URL && go run post-update.go"
   publish = "public"
-
 
 [build.environment]
   HUGO_VERSION = "0.121.1"
-  
 
 [context.production.environment]
   HUGO_ENV = "production"
@@ -21,7 +16,6 @@
 [context.branch-deploy.dev]
   HUGO_VERSION = "0.121.1"
   command = "hugo --gc -b $DEPLOY_PRIME_URL"
-
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
