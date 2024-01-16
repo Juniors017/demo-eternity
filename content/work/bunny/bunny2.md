@@ -20,7 +20,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorem, laborum 
 
 ### Subtitle
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorem, laborum impedit doloremque ducimus repellat sapiente aut qui quae provident, cum vitae atque eius earum labore. Quae quod rem aliquid!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorem, laborum impedit doloremque ducimus repellat sapiente aut qui quae provident, cum vitae atque '('(eius earum labore. Quae quod rem aliquid!
 
 Some list
 
