@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        node-version: 16  # spécifiez explicitement la version Node.js
 
     - name: Set up Go
       uses: actions/setup-go@v2
