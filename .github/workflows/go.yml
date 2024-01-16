@@ -25,6 +25,12 @@ jobs:
         go get gopkg.in/yaml.v2
     - name: Run Go Script
       run: |
+        
+
+        # Configuration de l'identité Git avec le token d'accès personnel
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+        
         go run ./post-update.go
 
         # Stage tous les fichiers modifiés
@@ -33,5 +39,5 @@ jobs:
         # Commit avec un message
         git commit -m "Renommer les fichiers"
 
-        # Poussez les modifications vers le dépôt distant (assurez-vous que vous avez les droits nécessaires pour pousser)
+        # Poussez les modifications vers le dépôt distant en utilisant le token d'accès personnel
         git push origin main  # Remplacez 'main' par le nom de votre branche si elle est différente
